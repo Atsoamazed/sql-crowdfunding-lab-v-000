@@ -38,7 +38,6 @@ FROM users
 JOIN ON users.id = pledges.id
 GROUP BY users.name
 ORDER BY pledges.amount, users.name
-
 "
 end
 
