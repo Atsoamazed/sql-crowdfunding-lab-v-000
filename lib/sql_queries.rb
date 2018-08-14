@@ -37,7 +37,7 @@ SELECT  users.name, SUM(pledges.amount)
 FROM users
 JOIN pledges on users.id = pledges.id
 GROUP BY pledges.amount
-ORDER BY users.name, pledges.amount
+ORDER BY pledges.amount
 "
 end
 
