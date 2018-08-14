@@ -26,7 +26,7 @@ FROM  projects
 JOIN pledges
 on projects.id = pledges.project_id
 GROUP BY projects.title
-HAVING projects.amount < ;"
+HAVING projects.funding_goal < pleges.amount ;"
 end
 
 def selects_user_names_and_amounts_of_all_pledges_grouped_by_name_then_orders_them_by_the_amount_and_users_name
